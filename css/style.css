@@ -249,6 +249,33 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  body.aboutUs-page {
+    font-size: 16px;
+  }
+
+  .header.aboutUs-page {
+    padding: 20px;
+  }
+
+  .main-aboutUs {
+    padding: 20px;
+    font-style: italic;
+  }
+
+  .aboutUs-title {
+    font-size: 24px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .aboutUs-images img {
+    width: 100%;
+  }
+}
+
 .store-page {
   background-color: silver;
   padding: 0px;
