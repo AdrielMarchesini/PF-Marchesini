@@ -426,11 +426,6 @@ button:hover {
   margin-left: auto;
 }
 
-.social-links {
-  display: flex;
-  align-items: center;
-}
-
 .wpp {
   width: 50px;
   height: auto;
@@ -442,9 +437,15 @@ button:hover {
   margin-left: 10px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   body {
     width: 100%;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
   }
 
   .header {
@@ -482,5 +483,22 @@ button:hover {
   .image-container img {
     max-width: 100%;
     height: auto;
+  }
+
+  .title h1.display-3 {
+    font-size: 36px;
+  }
+
+  .footer {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    font-size: 12px;
+    text-align: center;
+  }
+  .social-media-container {
+    size: 10px;
   }
 }
