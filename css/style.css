@@ -6,27 +6,9 @@ body {
   margin: 0;
 }
 
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-.nav a {
-  font-size: 30px;
-  color: white;
-  text-decoration: none;
-  margin: 0 20px;
-}
-
-.nav a.nav-home {
-  margin-right: auto;
-  color: royalblue;
-  text-decoration: none;
-}
-
 .header {
   background-color: #000;
-  padding: 50px;
+  padding: 20px;
   color: white;
 }
 
@@ -42,27 +24,49 @@ body {
   margin-top: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: center;
-  }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .nav a {
-    margin: 10px 0;
-  }
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .nav-home {
-    margin-right: 0;
-  }
+.nav ul li {
+  margin-right: 20px;
+}
 
-  .header {
-    padding: 20px;
-  }
+.nav a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
 
-  .nav a {
-    font-size: 30px;
-  }
+.nav a.nav-home {
+  color: royalblue;
+  text-decoration: none;
+}
+
+.nav-home {
+  font-size: 30px;
+  margin-right: 500px;
+  display: inline-block;
+  color: royalblue;
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav-link {
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .general-container {
@@ -81,7 +85,7 @@ body {
   font-size: 45px;
 }
 
-.ourBrands-container h2 {
+.ourBrands-container h1 {
   margin: 0;
 }
 
@@ -92,14 +96,14 @@ body {
   color: white;
 }
 
-.marca h3 {
+.marca h2 {
   margin: 0;
   background-color: #000;
   border: 4px solid royalblue;
   border-radius: 5%;
 }
 
-.marca h3::before {
+.marca h2::before {
   content: "\2605";
   margin-right: 10px;
 }
@@ -109,28 +113,6 @@ body {
   height: auto;
   display: block;
   margin-top: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  body.index {
-    font-size: 16px;
-  }
-
-  .header.index {
-    padding: 20px;
-  }
-
-  .general-container {
-    padding: 20px;
-  }
-
-  .image-container {
-    margin: 20px;
-  }
-
-  .marca {
-    font-size: 20px;
-  }
 }
 
 .gallery-page {
@@ -249,33 +231,6 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  body.aboutUs-page {
-    font-size: 16px;
-  }
-
-  .header.aboutUs-page {
-    padding: 20px;
-  }
-
-  .main-aboutUs {
-    padding: 20px;
-    font-style: italic;
-  }
-
-  .aboutUs-title {
-    font-size: 24px;
-  }
-
-  .about-text {
-    font-size: 16px;
-  }
-
-  .aboutUs-images img {
-    width: 100%;
-  }
-}
-
 .store-page {
   background-color: silver;
   padding: 0px;
@@ -341,11 +296,11 @@ body {
   text-align: center;
 }
 
-.specialists-article h3 {
+.specialists-article h1 {
   font-weight: bold;
 }
 
-.specialists-article h3::after {
+.specialists-article h1::after {
   content: "\2713";
   margin: 20px;
 }
@@ -485,24 +440,4 @@ button:hover {
   width: 35px;
   height: auto;
   margin-left: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .footer img {
-    margin-right: 20px;
-  }
-
-  .footer .ig {
-    margin: 10px;
-    width: 30px;
-  }
-
-  .footer-contact {
-    margin-top: 10px;
-  }
 }
