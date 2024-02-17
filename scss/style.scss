@@ -1,3 +1,11 @@
+$primary-color: #000;
+$secondary-color: royalblue;
+$background-light: false;
+
+@mixin roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -28,17 +36,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav ul li {
-  margin-right: 20px;
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      @include roboto-font;
+      margin-right: 20px;
+    }
+  }
 }
 
 .nav a {
@@ -412,8 +419,8 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  background-color: white;
-  border: 5px solid royalblue;
+  background-color: if($background-light, white, $secondary-color);
+  border: 5px solid $primary-color;
   text-align: right;
   margin-top: 60px;
   padding: 0 20px;
@@ -429,11 +436,13 @@ button:hover {
   width: 50px;
   height: auto;
   margin-left: 10px;
+  border-radius: 100%;
 }
 .ig {
   width: 35px;
   height: auto;
   margin-left: 10px;
+  border-radius: 100%;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -513,7 +522,7 @@ button:hover {
   }
 
   .footer-contact {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
   }
   .social-media-container {
